@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-var prefix = "R";
+var prefix = "4";
 client.on("message", message => {
 
             if (message.content.startsWith(prefix + "bc")) {
@@ -19,7 +19,7 @@ client.on("message", message => {
 client.on('message', async (message) => {
   if (!message.guild || message.author.bot) return;
   let args = message.content.split(' ');
-  let prefix = '!!';
+  let prefix = '$';
   let id = '';
   if (message.author.id != id) return;
   if (args[0] == `${prefix}setname`) {
@@ -49,7 +49,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Script By : i1Suhaib ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`.Dalina`,"http://twitch.tv/S-F")
+client.user.setGame(`MoonSide News`,"http://twitch.tv/S-F")
 client.user.setStatus("dnd")
 });
 
